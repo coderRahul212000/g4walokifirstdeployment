@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.set("view", path.join(__dirname, "views"));  
 
 
-app.get('/home', (req,res)=>{
+app.get('/', (req,res)=>{
     const name = req.params.name
     res.render("index")
 })
